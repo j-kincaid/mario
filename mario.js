@@ -1,7 +1,7 @@
 
-printPyramid(5);
+drawPyramid(5);
 
-function printPyramid(height) {
+drawPyramid(height) {
     // height is the number of rows. For each row...
     for (var row = 0; row < height; row++) {
         // figure out how many bricks in this row (aka the '#' characters)
@@ -20,14 +20,20 @@ function printPyramid(height) {
             rowStr += "#";
         }
 
+        // TODO 1
         // create a text element with the string of characters
-        textElem = document.createTextNode(rowStr);
 
+
+        // TODO 2
         // create a <p> element with the text inside
-        rowElem = document.createElement("p");
-        rowElem.appendChild(textElem);
 
-        // insert the paragraph as a child of the <body>
-        document.body.appendChild(rowElem);
+
+        // TODO 3
+        // insert the text element as a child of the paragraph element
+
+
+        // TODO 4
+        // insert the paragraph element as a child of the <body>
+
     }
 }
