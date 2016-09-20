@@ -9,30 +9,18 @@ drawPyramid(5);
  */
 function drawPyramid(height) {
 
-    // height is the number of rows. For each row...
+    // for each row....
     for (var row = 0; row < height; row++) {
-        
-        // figure out how many bricks in this row (aka the '#' characters)
-        var numBricks = row + 2;
 
-        // figure out how many space characters
+        // figure out number of bricks and spaces
+        var numBricks = row + 2;
         var numSpaces = height - row - 1;
 
-        // figure out how many bricks in this row (aka the '#' characters)
-        var numBricks = row + 2;
-
-        // figure out how many space characters
-        var numSpaces = height - row - 1;
-
-        // build up a string for this row. Starts empty...
+        // build up a string for this row
         var rowStr = "";
-
-        // add the spaces
         for (var i = 0; i < numSpaces; i++) {
             rowStr += ".";
         }
-
-        // add the bricks
         for (var i = 0; i < numBricks; i++) {
             rowStr += "#";
         }
