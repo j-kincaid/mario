@@ -1,6 +1,12 @@
 
 drawPyramid(5);
 
+
+/**
+ * drawPyramid
+ *
+ * Renders, in the HTML document, a Mario pyramid of the specified height
+ */
 drawPyramid(height) {
     // height is the number of rows. For each row...
     for (var row = 0; row < height; row++) {
