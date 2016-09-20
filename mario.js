@@ -7,7 +7,7 @@ drawPyramid(5);
  *
  * Renders, in the HTML document, a Mario pyramid of the specified height
  */
-drawPyramid(height) {
+function drawPyramid(height) {
     // height is the number of rows. For each row...
     for (var row = 0; row < height; row++) {
         // figure out how many bricks in this row (aka the '#' characters)
@@ -41,5 +41,8 @@ drawPyramid(height) {
         // TODO 4
         // insert the paragraph element as a child of the <body>
 
+
+        // you can delete this
+        console.log(rowStr)
     }
 }
