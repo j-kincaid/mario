@@ -8,20 +8,31 @@ drawPyramid(5);
  * Renders, in the HTML document, a Mario pyramid of the specified height
  */
 function drawPyramid(height) {
+
     // height is the number of rows. For each row...
     for (var row = 0; row < height; row++) {
+        
         // figure out how many bricks in this row (aka the '#' characters)
         var numBricks = row + 2;
 
         // figure out how many space characters
         var numSpaces = height - row - 1;
 
-        // build up a string for this row
+        // figure out how many bricks in this row (aka the '#' characters)
+        var numBricks = row + 2;
+
+        // figure out how many space characters
+        var numSpaces = height - row - 1;
+
+        // build up a string for this row. Starts empty...
         var rowStr = "";
+
+        // add the spaces
         for (var i = 0; i < numSpaces; i++) {
             rowStr += ".";
-            // using a period instead of a space because HTML ignores whitespace
         }
+
+        // add the bricks
         for (var i = 0; i < numBricks; i++) {
             rowStr += "#";
         }
