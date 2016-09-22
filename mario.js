@@ -25,23 +25,20 @@ function drawPyramid(height) {
             rowStr += "#";
         }
 
+        // you can delete this now
+        console.log(rowStr)
+
+
         // TODO 1
-        // create a text element with the string of characters
+        // create a <p> element
 
 
         // TODO 2
-        // create a <p> element with the text inside
+        // set rowStr as the inner text of the paragraph element
 
 
         // TODO 3
-        // insert the text element as a child of the paragraph element
+        // insert the paragraph element as a child of the container <div>
 
-
-        // TODO 4
-        // insert the paragraph element as a child of the <body>
-
-
-        // you can delete this
-        console.log(rowStr)
     }
 }
