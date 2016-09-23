@@ -28,9 +28,9 @@ function drawPyramid(height) {
         // you can delete this now
         console.log(rowStr)
 
-        // TODO
+        // TODO 1
         // create an element whose inner text is rowStr,
-        // and insert it inside the container <div id="pyramid">
+        // and insert it as a child of the container <div id="pyramid">
 
 
     }
