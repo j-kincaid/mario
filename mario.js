@@ -33,5 +33,9 @@ function drawPyramid(height) {
         // and insert it as a child of the container <div id="pyramid">
 
 
+        // TODO 2
+        // delete the "under construction" element, ie the <div id="notice">
+
+        
     }
 }
