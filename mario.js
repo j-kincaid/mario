@@ -1,4 +1,3 @@
-
 drawPyramid(5);
 
 
@@ -22,19 +21,21 @@ function drawPyramid(height) {
 
         // build up a string for this row
         var rowStr = "";
-        for (var i = 0; i < numSpaces; i++) {
-            rowStr += "."; // QUIZ: what happens if we use a space (" ") instead of a period?
+        for (var i = 1; i < numSpaces; i++) {
+            rowStr += " "; // QUIZ: what happens if we use a space (" ") instead of a period?
         }
-        for (var i = 0; i < numBricks; i++) {
+        for (var i = 1; i < numBricks; i++) {
             rowStr += "#";
         }
 
-        // you can delete this now
-        console.log(rowStr)
-
         // TODO 1
         // create an element whose inner text is rowStr,
-        // and insert it as a child of the container <div id="pyramid">
 
+
+        pyramidDiv = document.getElementById('pyramid');
+        childDiv = document.appendChild("pyramidDiv");
+        // and insert it as a child of the container <div id="pyramid">
+        childDiv.innerHTML = 'rowStr';
+        pyramidDiv.appendChild(childDiv);
     }
 }
